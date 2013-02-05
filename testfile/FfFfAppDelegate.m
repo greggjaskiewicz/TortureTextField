@@ -7,12 +7,44 @@
 //
 
 #import "FfFfAppDelegate.h"
+#import "NSString+foobar.h"
+
+@interface FfFfAppDelegate()
+
+@property(strong, nonatomic) NSTextField *foo;
+@property(strong) dispatch_queue_t q;
+
+@end
+
 
 @implementation FfFfAppDelegate
 
+- (void)runRandom
+{
+  dispatch_async(self.q, ^{
+    //    NSString __block *f = [NSString generateRandStringLength:1+(arc4random()%1024)];
+    NSString __block *f = [NSString generateUtf16RandStringLength:1+(arc4random()%1024)];
+    
+    //    NSLog(@"%@", f);
+
+     dispatch_async(dispatch_get_main_queue(), ^{
+     self.foo.stringValue = f;
+     [self.window makeFirstResponder:self.foo];
+     });
+  
+    [self runRandom];
+  });
+}
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  // Insert code here to initialize your application
+  self.q = dispatch_queue_create("foo", DISPATCH_QUEUE_CONCURRENT);
+  self.foo = [[NSTextField alloc] init];
+  [self.window makeFirstResponder:self.foo];
+  [self.window setContentView:self.foo];
+  
+  //  self.foo.stringValue = [self.foo.stringValue stringByAppendingString:@"   File:///foo"];
+  [self runRandom];
 }
 
 @end

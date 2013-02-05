@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27F91D0F16C1C98C0019C410 /* NSString+foobar.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F91D0E16C1C98C0019C410 /* NSString+foobar.m */; };
 		27F9A8EC16C1C0E6005CB5EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27F9A8EB16C1C0E6005CB5EC /* Cocoa.framework */; };
 		27F9A8F616C1C0E6005CB5EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27F9A8F416C1C0E6005CB5EC /* InfoPlist.strings */; };
 		27F9A8F816C1C0E6005CB5EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F9A8F716C1C0E6005CB5EC /* main.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27F91D0D16C1C98C0019C410 /* NSString+foobar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+foobar.h"; sourceTree = "<group>"; };
+		27F91D0E16C1C98C0019C410 /* NSString+foobar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+foobar.m"; sourceTree = "<group>"; };
 		27F9A8E816C1C0E6005CB5EC /* testfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F9A8EB16C1C0E6005CB5EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27F9A8EE16C1C0E6005CB5EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +89,8 @@
 				27F9A8FE16C1C0E6005CB5EC /* FfFfAppDelegate.m */,
 				27F9A90016C1C0E6005CB5EC /* MainMenu.xib */,
 				27F9A8F216C1C0E6005CB5EC /* Supporting Files */,
+				27F91D0D16C1C98C0019C410 /* NSString+foobar.h */,
+				27F91D0E16C1C98C0019C410 /* NSString+foobar.m */,
 			);
 			path = testfile;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			files = (
 				27F9A8F816C1C0E6005CB5EC /* main.m in Sources */,
 				27F9A8FF16C1C0E6005CB5EC /* FfFfAppDelegate.m in Sources */,
+				27F91D0F16C1C98C0019C410 /* NSString+foobar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +310,7 @@
 				27F9A90716C1C0E6005CB5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
