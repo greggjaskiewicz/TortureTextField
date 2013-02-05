@@ -19,15 +19,15 @@
 /* Begin PBXFileReference section */
 		27F91D0D16C1C98C0019C410 /* NSString+foobar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+foobar.h"; sourceTree = "<group>"; };
 		27F91D0E16C1C98C0019C410 /* NSString+foobar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+foobar.m"; sourceTree = "<group>"; };
-		27F9A8E816C1C0E6005CB5EC /* testfile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testfile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27F9A8E816C1C0E6005CB5EC /* TortureTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TortureTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27F9A8EB16C1C0E6005CB5EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		27F9A8EE16C1C0E6005CB5EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		27F9A8EF16C1C0E6005CB5EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		27F9A8F016C1C0E6005CB5EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		27F9A8F316C1C0E6005CB5EC /* testfile-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "testfile-Info.plist"; sourceTree = "<group>"; };
+		27F9A8F316C1C0E6005CB5EC /* TortureTextField-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TortureTextField-Info.plist"; sourceTree = "<group>"; };
 		27F9A8F516C1C0E6005CB5EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27F9A8F716C1C0E6005CB5EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27F9A8F916C1C0E6005CB5EC /* testfile-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "testfile-Prefix.pch"; sourceTree = "<group>"; };
+		27F9A8F916C1C0E6005CB5EC /* TortureTextField-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TortureTextField-Prefix.pch"; sourceTree = "<group>"; };
 		27F9A8FB16C1C0E6005CB5EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		27F9A8FD16C1C0E6005CB5EC /* FfFfAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FfFfAppDelegate.h; sourceTree = "<group>"; };
 		27F9A8FE16C1C0E6005CB5EC /* FfFfAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FfFfAppDelegate.m; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		27F9A8E916C1C0E6005CB5EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				27F9A8E816C1C0E6005CB5EC /* testfile.app */,
+				27F9A8E816C1C0E6005CB5EC /* TortureTextField.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,10 +98,10 @@
 		27F9A8F216C1C0E6005CB5EC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				27F9A8F316C1C0E6005CB5EC /* testfile-Info.plist */,
+				27F9A8F316C1C0E6005CB5EC /* TortureTextField-Info.plist */,
 				27F9A8F416C1C0E6005CB5EC /* InfoPlist.strings */,
 				27F9A8F716C1C0E6005CB5EC /* main.m */,
-				27F9A8F916C1C0E6005CB5EC /* testfile-Prefix.pch */,
+				27F9A8F916C1C0E6005CB5EC /* TortureTextField-Prefix.pch */,
 				27F9A8FA16C1C0E6005CB5EC /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -110,9 +110,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		27F9A8E716C1C0E6005CB5EC /* testfile */ = {
+		27F9A8E716C1C0E6005CB5EC /* TortureTextField */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 27F9A90516C1C0E6005CB5EC /* Build configuration list for PBXNativeTarget "testfile" */;
+			buildConfigurationList = 27F9A90516C1C0E6005CB5EC /* Build configuration list for PBXNativeTarget "TortureTextField" */;
 			buildPhases = (
 				27F9A8E416C1C0E6005CB5EC /* Sources */,
 				27F9A8E516C1C0E6005CB5EC /* Frameworks */,
@@ -122,9 +122,9 @@
 			);
 			dependencies = (
 			);
-			name = testfile;
+			name = TortureTextField;
 			productName = testfile;
-			productReference = 27F9A8E816C1C0E6005CB5EC /* testfile.app */;
+			productReference = 27F9A8E816C1C0E6005CB5EC /* TortureTextField.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +137,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Greg Jaskiewicz";
 			};
-			buildConfigurationList = 27F9A8E316C1C0E6005CB5EC /* Build configuration list for PBXProject "testfile" */;
+			buildConfigurationList = 27F9A8E316C1C0E6005CB5EC /* Build configuration list for PBXProject "TortureTextField" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -149,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				27F9A8E716C1C0E6005CB5EC /* testfile */,
+				27F9A8E716C1C0E6005CB5EC /* TortureTextField */,
 			);
 		};
 /* End PBXProject section */
@@ -272,9 +272,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testfile/testfile-Prefix.pch";
-				INFOPLIST_FILE = "testfile/testfile-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "testfile/TortureTextField-Prefix.pch";
+				INFOPLIST_FILE = "testfile/TortureTextField-Info.plist";
+				PRODUCT_NAME = TortureTextField;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -284,9 +284,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "testfile/testfile-Prefix.pch";
-				INFOPLIST_FILE = "testfile/testfile-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "testfile/TortureTextField-Prefix.pch";
+				INFOPLIST_FILE = "testfile/TortureTextField-Info.plist";
+				PRODUCT_NAME = TortureTextField;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -294,7 +294,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		27F9A8E316C1C0E6005CB5EC /* Build configuration list for PBXProject "testfile" */ = {
+		27F9A8E316C1C0E6005CB5EC /* Build configuration list for PBXProject "TortureTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27F9A90316C1C0E6005CB5EC /* Debug */,
@@ -303,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		27F9A90516C1C0E6005CB5EC /* Build configuration list for PBXNativeTarget "testfile" */ = {
+		27F9A90516C1C0E6005CB5EC /* Build configuration list for PBXNativeTarget "TortureTextField" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				27F9A90616C1C0E6005CB5EC /* Debug */,
