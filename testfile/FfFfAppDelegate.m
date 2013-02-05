@@ -43,6 +43,8 @@
   [self.window makeFirstResponder:self.foo];
   [self.window setContentView:self.foo];
   
+  self.foo.frame = CGRectMake(0, 0, 1, 1);
+  
   //  self.foo.stringValue = [self.foo.stringValue stringByAppendingString:@"   File:///foo"];
   [self runRandom];
 }

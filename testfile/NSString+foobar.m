@@ -27,8 +27,10 @@ static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
 + (NSString *)generateUtf16RandStringLength:(NSUInteger)length
 {
   NSString *s;
+  int i = 0;
   do
   {
+    i++;
     NSMutableData   *d = [[NSMutableData alloc] initWithCapacity:length*2];
     UInt8 foo[length*2];
     
@@ -42,6 +44,10 @@ static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
     s = [[NSString alloc] initWithData:d encoding:NSUTF16BigEndianStringEncoding];
   } while(!s);
   
+  if (i>1)
+  {
+    //    NSLog(@"%d", i);
+  }
   return s;
 }
 
