@@ -22,16 +22,13 @@
 - (void)runRandom
 {
   dispatch_async(self.q, ^{
-    //    NSString __block *f = [NSString generateRandStringLength:1+(arc4random()%1024)];
-    NSString __block *f = [NSString generateUtf16RandStringLength:1+(arc4random()%1024)];
+    NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(1023)];
     
-    //    NSLog(@"%@", f);
-
-     dispatch_async(dispatch_get_main_queue(), ^{
-     self.foo.stringValue = f;
-     [self.window makeFirstResponder:self.foo];
-     });
-  
+    dispatch_async(dispatch_get_main_queue(), ^{
+      self.foo.stringValue = f;
+      [self.window makeFirstResponder:self.foo];
+    });
+    
     [self runRandom];
   });
 }

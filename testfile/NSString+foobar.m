@@ -36,7 +36,7 @@ static NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY
     
     for (NSUInteger i=0; i<length*2; i++)
     {
-      foo[i] = 1+(arc4random()%(UINT8_MAX-1));
+      foo[i] = 1+arc4random_uniform(UINT8_MAX-1);
     }
     
     [d appendBytes:foo length:sizeof(foo)];
