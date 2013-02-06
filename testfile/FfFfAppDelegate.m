@@ -21,7 +21,7 @@
 
 - (void)runRandom
 {
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+  dispatch_sync(self.q, ^{
     NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(63)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -36,7 +36,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-  self.q = dispatch_queue_create("foo", DISPATCH_QUEUE_CONCURRENT);
+  self.q = dispatch_queue_create("foo", DISPATCH_QUEUE_SERIAL);
   self.foo = [[NSTextField alloc] init];
   [self.window makeFirstResponder:self.foo];
   [self.window setContentView:self.foo];
