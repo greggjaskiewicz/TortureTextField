@@ -22,10 +22,11 @@
 - (void)runRandom
 {
   dispatch_async(self.q, ^{
-    NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(1023)];
+    NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(63)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       self.foo.stringValue = f;
+      [self.foo selectText:nil];
       [self.window makeFirstResponder:self.foo];
     });
     
@@ -40,9 +41,9 @@
   [self.window makeFirstResponder:self.foo];
   [self.window setContentView:self.foo];
   
-  self.foo.frame = CGRectMake(0, 0, 1, 1);
-  
-  //  self.foo.stringValue = [self.foo.stringValue stringByAppendingString:@"   File:///foo"];
+  [self.foo selectText:nil];
+  [self.window makeFirstResponder:self.foo];
+
   [self runRandom];
 }
 
