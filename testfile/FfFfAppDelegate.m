@@ -21,16 +21,16 @@
 
 - (void)runRandom
 {
-  dispatch_async(self.q, ^{
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
     NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(63)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       self.foo.stringValue = f;
       [self.foo selectText:nil];
       [self.window makeFirstResponder:self.foo];
+      [self runRandom];
     });
     
-    [self runRandom];
   });
 }
 
