@@ -22,7 +22,7 @@
 - (void)runRandom
 {
   dispatch_sync(self.q, ^{
-    NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(63)];
+    NSString __block *f = [NSString generateUtf16RandStringLength:1+arc4random_uniform(127)];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       self.foo.stringValue = f;
